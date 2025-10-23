@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brandGreen: #8FC0AC;
+  --color-brandBlue: #599FFC;
+  --color-brandDark: #0A0A0A;
+  --color-brandGray: #4A5565;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500&display=swap");
+
+@reference "tailwindcss";
+
+html,
+body {
+  @apply bg-white text-brandDark scroll-smooth;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+p,
+button,
+a {
+  font-family: "Poppins", sans-serif;
+}

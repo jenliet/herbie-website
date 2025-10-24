@@ -2,26 +2,42 @@ import React from "react";
 import appBlocker from "../../assets/images/app-blocker-1.png";
 
 const GreenBanner: React.FC = () => {
-  return (
-    <section className="bg-brandGreen/40 py-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
-        <div>
-          <span className="text-sm bg-brandBlue/80 px-3 py-1 rounded-lg text-black font-medium">
+    return (
+    <section className="relative bg-brandGreen/50 py-20">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 md:px-12 lg:px-24">
+        
+        {/* ✅ LEFT SIDE — text content */}
+        <div className="flex flex-col space-y-6 md:space-y-8 text-brandDark">
+          {/* Small tag */}
+          <span className="bg-brandBlue text-black text-sm font-medium rounded-xl px-4 py-2 w-fit shadow-sm">
             Core Features
           </span>
-          <h2 className="text-5xl font-inter mt-6 leading-tight">
+
+          {/* Heading */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-normal leading-tight">
             Flexible App Blocking - Set Smarter Limits{" "}
             <span className="text-brandBlue font-semibold">Your Way.</span>
           </h2>
-          <p className="text-xl font-poppins mt-4 opacity-80">
-            Herbie allows you to customise when and how your apps stay off.
+
+          {/* Description */}
+          <p className="text-lg md:text-xl font-poppins text-brandDark/70 max-w-md">
+            Herbie learns your habits and goals to guide you with suggestions
+            that actually work for you.
           </p>
         </div>
-        <img
-          src={appBlocker}
-          alt="App Blocker Screenshot"
-          className="rounded-3xl shadow-lg w-full max-w-[500px] mx-auto"
-        />
+
+        {/* ✅ RIGHT SIDE — image */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative w-[280px] md:w-[400px] lg:w-[600px]">
+            {/* subtle background card behind the image */}
+            <div className="absolute inset-0 bg-gray-300 rounded-[50px] shadow-md translate-x-2 translate-y-3 opacity-80"></div>
+            <img
+              src={appBlocker}
+              alt="Smart Recommendations Preview"
+              className="relative w-full rounded-[50px] shadow-lg object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

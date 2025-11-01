@@ -2,7 +2,7 @@ import React from "react";
 
 const FeedbackForm: React.FC = () => {
   return (
-    <section className="w-full md:w-1/2 bg-brandBlue/50 shadow-lg rounded-[50px] p-10 md:p-14 text-brandDark font-inter">
+    <section className="w-full bg-brandBlue/50 shadow-lg rounded-[50px] p-10 md:p-14 text-brandDark font-inter">
       <form className="flex flex-col space-y-6">
         {/* Full Name */}
         <div>
@@ -51,7 +51,7 @@ const FeedbackForm: React.FC = () => {
           <textarea
             id="message"
             placeholder="Type your message here..."
-            rows={6}
+            rows={7}
             className="w-full rounded-2xl bg-white px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-brandGreen transition resize-none"
           ></textarea>
         </div>
@@ -69,4 +69,5 @@ const FeedbackForm: React.FC = () => {
 };
 
 export default FeedbackForm;
+
 

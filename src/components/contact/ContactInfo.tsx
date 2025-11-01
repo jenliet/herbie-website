@@ -1,4 +1,5 @@
 import React from "react";
+import { Instagram, Linkedin } from "lucide-react"; // ✅ import icons
 
 const ContactInfo: React.FC = () => {
   return (
@@ -7,26 +8,38 @@ const ContactInfo: React.FC = () => {
         Contact Information
       </h2>
 
+      {/* ✅ Email */}
       <div>
         <p className="font-inter text-lg font-medium mb-2">Email</p>
-        <p className="font-inter text-base text-gray-800 opacity-80">
+        <a
+        href="mailto:elise.neo@herbiestreaks.xyz?subject=Hello%20Herbie%20Team"
+        className="font-inter text-base text-gray-800 opacity-80 hover:text-brandDark transition underline underline-offset-2"
+        >
           elise.neo@herbiestreaks.xyz
-        </p>
+        </a>
+
       </div>
 
+      {/* ✅ Social icons */}
       <div>
         <p className="font-inter text-lg font-medium mt-6 mb-3">Follow Us</p>
-        <div className="flex gap-4">
-          <img
-            src="https://placehold.co/50x50"
-            alt="Instagram"
-            className="w-10 h-10"
-          />
-          <img
-            src="https://placehold.co/50x50"
-            alt="LinkedIn"
-            className="w-10 h-10"
-          />
+        <div className="flex gap-5 text-brandDark">
+          <a
+            href="https://instagram.com/herbiestreaks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-brandDark transition"
+          >
+            <Instagram className="w-8 h-8" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/herbiestreaks/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-brandDark transition"
+          >
+            <Linkedin className="w-8 h-8" />
+          </a>
         </div>
       </div>
     </div>
@@ -34,4 +47,5 @@ const ContactInfo: React.FC = () => {
 };
 
 export default ContactInfo;
+
 

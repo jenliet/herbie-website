@@ -18,12 +18,12 @@ const UsageAnalytics: React.FC = () => {
         {/* ✅ RIGHT: text */}
         <div className="flex flex-col space-y-6 md:space-y-8">
           {/* Small tag */}
-          <span className="bg-brandBlue text-black text-sm font-medium rounded-xl px-4 py-2 w-fit shadow-sm">
+          <span className="bg-brandBlue text-white text-sm font-medium rounded-xl px-4 py-2 w-fit shadow-sm">
             Core Features
           </span>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-normal leading-tight text-brandDark">
+          <h2 className="text-4xl md:text-4xl lg:text-5xl font-inter font-normal leading-tight text-brandDark">
             Usage Analytics With Insights – See Your Habits{" "}
             <span className="text-brandBlue font-bold">Clearly.</span>
           </h2>

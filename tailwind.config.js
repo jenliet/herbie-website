@@ -12,6 +12,9 @@ export default {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      screens: {
+        nav: "820px"
+      }
     },
   },
   plugins: [],

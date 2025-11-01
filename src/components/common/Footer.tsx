@@ -22,8 +22,8 @@ const Footer: React.FC = () => {
 
       <ul className="flex flex-wrap justify-center md:justify-start gap-6 text-brandGreen font-medium text-base md:text-lg">
         <li><Link to="/" className="hover:text-brandDark transition">Home</Link></li>
-        <li><Link to="/why" className="hover:text-brandDark transition">Our Why</Link></li>
-        <li><Link to="/team" className="hover:text-brandDark transition">Our Team</Link></li>
+        <li><Link to="/our-why" className="hover:text-brandDark transition">Our Why</Link></li>
+        <li><Link to="/our-team" className="hover:text-brandDark transition">Our Team</Link></li>
         <li><Link to="/contact" className="hover:text-brandDark transition">Contact Us</Link></li>
       </ul>
     </div>

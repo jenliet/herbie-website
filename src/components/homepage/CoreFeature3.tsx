@@ -9,12 +9,12 @@ const CoreFeature3: React.FC = () => {
         {/* ✅ LEFT SIDE — text content */}
         <div className="flex flex-col space-y-6 md:space-y-8 text-brandDark">
           {/* Small tag */}
-          <span className="bg-brandBlue text-black text-sm font-medium rounded-xl px-4 py-2 w-fit shadow-sm">
+          <span className="bg-brandBlue text-white text-sm font-medium rounded-xl px-4 py-2 w-fit shadow-sm">
             Core Features
           </span>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-normal leading-tight">
+          <h2 className="text-4xl md:text-4xl lg:text-5xl font-inter font-normal leading-tight">
             Smart Recommendations,{" "}
             <span className="text-brandBlue font-semibold">Just For You.</span>
           </h2>
@@ -26,17 +26,13 @@ const CoreFeature3: React.FC = () => {
           </p>
         </div>
 
-        {/* ✅ RIGHT SIDE — image */}
+        {/* ✅ RIGHT SIDE — single clean image */}
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-[280px] md:w-[400px] lg:w-[600px]">
-            {/* subtle background card behind the image */}
-            <div className="absolute inset-0 bg-gray-300 rounded-[50px] shadow-md translate-x-2 translate-y-3 opacity-80"></div>
-            <img
-              src={recommendationsImg}
-              alt="Smart Recommendations Preview"
-              className="relative w-full rounded-[50px] shadow-lg object-cover"
-            />
-          </div>
+          <img
+            src={recommendationsImg}
+            alt="Smart Recommendations Preview"
+            className="w-[280px] md:w-[400px] lg:w-[600px] rounded-[50px] shadow-lg object-cover"
+          />
         </div>
       </div>
     </section>
@@ -44,3 +40,4 @@ const CoreFeature3: React.FC = () => {
 };
 
 export default CoreFeature3;
+

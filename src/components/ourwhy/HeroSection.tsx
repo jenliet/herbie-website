@@ -1,36 +1,40 @@
 import React from "react";
 
-const HeroSection: React.FC = () => {
+const OurWhyHero: React.FC = () => {
   return (
-    <section className="text-center px-6 md:px-20 mt-20">
-      <h1 className="text-4xl md:text-6xl font-semibold">
-        We’re living on <span className="text-blue-500 font-bold">our screens.</span>
+    <section className="text-center py-28 px-6 md:px-20">
+      {/* heading */}
+      <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-20">
+        We’re living on <span className="text-brandBlue">our screens.</span>
       </h1>
 
-      <p className="mt-12 text-2xl md:text-3xl">If you...</p>
+      {/* intro line */}
+      <p className="text-lg md:text-xl text-gray-600 mb-24">If you...</p>
 
-      <div className="mt-10 bg-gray-50 rounded-3xl py-4 px-6 inline-block">
-        <span className="text-gray-800 text-2xl md:text-3xl">
-          spend <span className="font-bold text-green-600">5+ hours a day</span> on your phone,
-        </span>
-      </div>
-
-      <div className="mt-6 bg-gray-50 rounded-3xl py-4 px-6 inline-block">
-        <span className="text-gray-800 text-2xl md:text-3xl">
-          and check it <span className="font-bold text-green-600">100 times daily,</span>
-        </span>
-      </div>
-
-      <p className="mt-10 text-2xl md:text-3xl">
-        that’s <span className="text-green-600 font-semibold">1/3 of your life gone.</span>
+      {/* first statement */}
+      <p className="inline-block bg-gray-100 rounded-full px-6 py-3 text-xl md:text-2xl mb-20">
+        spend <span className="text-brandGreen font-semibold">5+ hours a day</span> on your phone,
       </p>
 
-      <p className="mt-8 text-gray-500 text-lg max-w-2xl mx-auto">
-        We scroll while eating, walking, even talking to friends. It’s not that we want to waste time —
-        it just happens.
+      {/* second statement */}
+      <p className="block bg-gray-100 rounded-full px-6 py-3 text-xl md:text-2xl mb-28 mx-auto w-fit">
+        and check it{" "}
+        <span className="text-brandGreen font-semibold">100 times daily,</span>
+      </p>
+
+      {/* punchline */}
+      <p className="text-2xl md:text-3xl font-semibold mb-16">
+        that’s <span className="text-brandGreen">1/3 of your life gone.</span>
+      </p>
+
+      {/* subtext */}
+      <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        We scroll while eating, walking, even talking to friends. It’s not that we want to waste time — it just happens.
       </p>
     </section>
   );
 };
 
-export default HeroSection;
+export default OurWhyHero;
+
+

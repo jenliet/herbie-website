@@ -23,13 +23,13 @@ const Navbar: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full bg-white border-b border-brandGreen/50 px-6 md:px-12 lg:px-20 py-1 font-inter sticky top-0 z-50">
+    <nav className="w-full bg-white border-b border-brandGreen/50 px-6 lg:px-12 xl:px-20 py-1 font-inter sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* ✅ Left - Logo + Hamburger */}
         <div className="flex items-center gap-3">
-          {/* Hamburger only on mobile */}
+          {/* Hamburger now appears earlier */}
           <button
-            className="md:hidden text-brandGreen"
+            className="lg:hidden text-brandGreen"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* ✅ Center - Nav links (desktop only) */}
-        <ul className="hidden md:flex gap-10 text-brandGreen font-medium text-base md:text-lg">
+        <ul className="hidden lg:flex gap-10 text-brandGreen font-medium text-base lg:text-lg">
           <li>
             <NavLink
               to="/"
@@ -102,20 +102,20 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* ✅ Right - CTA (desktop only) */}
-<a
-  href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hidden md:block px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
->
-  Download Now
-</a>
-</div>
+        <a
+          href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:block px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
+        >
+          Download Now
+        </a>
+      </div>
 
       {/* ✅ Mobile dropdown (smooth + scrollable) */}
       <div
         ref={dropdownRef}
-        className="md:hidden bg-white border-t border-brandGreen/20 overflow-hidden transition-all duration-500 ease-in-out"
+        className="lg:hidden bg-white border-t border-brandGreen/20 overflow-hidden transition-all duration-500 ease-in-out"
         style={{
           height: "0px",
           opacity: 0,
@@ -150,15 +150,14 @@ const Navbar: React.FC = () => {
           >
             Contact Us
           </NavLink>
-<a
-  href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hidden md:block px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
->
-  Download Now
-</a>
-
+          <a
+            href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
+          >
+            Download Now
+          </a>
         </div>
       </div>
     </nav>
@@ -166,5 +165,6 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
 
 

@@ -44,7 +44,7 @@ const HealthIssues: React.FC = () => {
 
       {/* Cards */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {issues.map((item, idx) => (
+        {issues.map((item) => (
           <Reveal key={item.title} delay={item.delay}>
             <div className="relative p-8 bg-white rounded-2xl shadow-md transition-shadow flex flex-col items-center text-center">
               {/* Icon */}
@@ -59,7 +59,6 @@ const HealthIssues: React.FC = () => {
               {/* Title & Description */}
               <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
               <p className="text-gray-600 text-base">{item.desc}</p>
-
             </div>
           </Reveal>
         ))}
@@ -69,5 +68,6 @@ const HealthIssues: React.FC = () => {
 };
 
 export default HealthIssues;
+
 
 

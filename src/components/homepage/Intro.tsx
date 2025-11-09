@@ -26,7 +26,7 @@ const Features: React.FC = () => {
           {
             icon: icon3,
             title: "Personalised Blocking",
-            desc: "We adapt and evolve with you — adjusting app limits based on your habits.",
+            desc: "We adapt and evolve with you, adjusting app limits based on your habits.",
           },
         ].map((f, i) => (
           <div key={i} className="flex flex-col items-center">

@@ -2,13 +2,14 @@ import React from "react";
 import heroPhone from "../../assets/images/hero-phone.png";
 import heroCardTop from "../../assets/images/hero-card-top.png";
 import heroCardBottom from "../../assets/images/hero-card-bottom.png";
+import Reveal from "../common/Reveal";
 
 const Hero: React.FC = () => {
   return (
     <section className="relative py-20">
       {/* ✅ Constrain width just like GreenBanner */}
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center px-6 md:px-12 lg:px-24">
-        
+      <Reveal delay="50ms">
         {/* ✅ Left side text */}
         <div className="flex flex-col space-y-6 text-center lg:text-left">
           <h1 className="text-4xl md:text-6xl font-inter leading-tight">
@@ -28,22 +29,29 @@ const Hero: React.FC = () => {
               href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brandGreen text-white w-[220px] py-4 rounded-full font-medium text-center hover:bg-[#7bb49b] transition shadow-md"
+                className="
+    bg-brandGreen text-white w-[220px] py-4 rounded-full font-medium text-center
+    hover:bg-[#2E6150] transition
+    shadow-md
+  "
             >
               Download For Free
             </a>
           </div>
         </div>
+      </Reveal>
 
         {/* ✅ Right side — phone + stacked cards */}
         <div className="flex justify-center lg:justify-end relative overflow-hidden mt-12 lg:mt-0">
           <div className="relative flex items-center justify-center">
             {/* Phone mockup */}
+            <Reveal delay="50ms">
             <img
               src={heroPhone}
               alt="Herbie app preview"
-              className="relative z-10 w-[240px] md:w-[300px] lg:w-[340px] drop-shadow-xl mx-auto"
+              className="relative z-10 w-[240px] md:w-[300px] lg:w-[340px] mx-auto"
             />
+            </Reveal>
 
             {/* Stacked cards (only visible on large screens) */}
             <div className="hidden xl:flex flex-col gap-6 absolute top-8 left-[110%]">

@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
           href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:block px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
+          className="hidden lg:block px-6 py-2 rounded-full border bg-brandGreen text-white hover:bg-white hover:text-brandGreen transition font-medium"
         >
           Download Now
         </a>
@@ -121,7 +121,15 @@ const Navbar: React.FC = () => {
           opacity: 0,
         }}
       >
-        <div className="flex flex-col gap-4 py-4 px-6 text-brandGreen font-medium text-base overflow-y-auto max-h-[60vh]">
+        <div
+  className="
+    flex flex-col items-center text-center
+    gap-5 py-6 px-6
+    text-brandGreen font-medium text-lg
+    overflow-y-auto max-h-[60vh]
+  "
+>
+
           <NavLink
             to="/"
             onClick={() => setIsOpen(false)}
@@ -154,7 +162,7 @@ const Navbar: React.FC = () => {
             href="https://apps.apple.com/us/app/herbie-streaks/id6747325837"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 px-6 py-2 rounded-full border border-brandGreen text-brandGreen hover:bg-brandGreen hover:text-white transition font-medium"
+            className="mt-4 px-6 py-2 rounded-full border bg-brandGreen text-white hover:bg-white hover:text-brandGreen transition font-medium"
           >
             Download Now
           </a>

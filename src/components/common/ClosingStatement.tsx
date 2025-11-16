@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "../common/Reveal";
 
 interface ClosingStatementProps {
   title?: string;
@@ -16,6 +17,7 @@ const ClosingStatement: React.FC<ClosingStatementProps> = ({
   return (
     <section className="bg-white text-center py-24 px-6 md:px-12 lg:px-24">
       {/* ✅ tagline */}
+    <Reveal delay="5ms">
       <p className="inline-block bg-[#DADADA] text-black text-base md:text-lg font-inter px-4 py-3 rounded-3xl mb-10">
         Smarter habits, less doomscrolling
       </p>
@@ -48,6 +50,7 @@ const ClosingStatement: React.FC<ClosingStatementProps> = ({
       >
         {buttonText}
       </a>
+    </Reveal>
     </section>
   );
 };

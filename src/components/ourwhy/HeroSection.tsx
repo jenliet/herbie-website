@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "../common/Reveal";
 
 const OurWhyHero: React.FC = () => {
   return (
@@ -23,14 +24,18 @@ const OurWhyHero: React.FC = () => {
       </p>
 
       {/* punchline */}
+      <Reveal delay="5ms">
       <p className="text-2xl md:text-3xl font-semibold mb-16">
         that’s <span className="text-brandGreen">1/3 of your life gone.</span>
       </p>
+      </Reveal>
 
       {/* subtext */}
+      <Reveal delay="40ms">
       <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
         We scroll while eating, walking, even talking to friends. <br /> <br />It’s not that we want to waste time, it just happens.
       </p>
+      </Reveal>
     </section>
   );
 };

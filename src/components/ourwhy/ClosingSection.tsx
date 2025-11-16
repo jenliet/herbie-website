@@ -1,8 +1,10 @@
 import React from "react";
+import Reveal from "../common/Reveal";
 
 const ClosingSection: React.FC = () => {
   return (
     <section className="text-center py-16 px-6 md:px-20">
+      <Reveal delay="5ms">
       {/* ✅ tagline */}
       <button className="bg-gray-200 text-black rounded-3xl px-4 py-3 mb-8">
         Smarter habits, less doomscrolling
@@ -37,6 +39,7 @@ const ClosingSection: React.FC = () => {
       <p className="text-gray-400 mt-6 text-sm">
         Free To Download | No Credit Card Required
       </p>
+      </Reveal>
     </section>
   );
 };

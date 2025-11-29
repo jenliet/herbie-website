@@ -12,7 +12,7 @@ const GreenBanner: React.FC = () => {
           <Reveal delay="0ms">
             <img
               src={appBlocker}
-              alt="Smart Recommendations Preview"
+              alt="Herbie app screen showing smart, personalised app-blocking recommendations"
               className="w-[280px] md:w-[400px] lg:w-[600px] rounded-[50px] shadow-lg object-cover"
             />
           </Reveal>

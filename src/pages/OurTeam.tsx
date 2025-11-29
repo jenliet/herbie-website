@@ -7,30 +7,30 @@ import Footer from "../components/common/Footer";
 
 const OurTeam: React.FC = () => {
   return (
-    <>
-      {/* React 19 will hoist these into <head> */}
-      <title>Herbie – Mindful Screen Time for Students</title>
-      <meta
-        name="description"
-        content="Herbie helps students reduce doomscrolling with flexible app blocking, streaks, and mindful screen-time insights."
-      />
-      <meta
-        name="keywords"
-        content="digital wellbeing, screen time, app blocker, students, Herbie"
-      />
+ <>
+  <title>Meet the Herbie Team – Students Building Better Screen-Time Habits</title>
+  <meta
+    name="description"
+    content="Herbie is built by a student-led team passionate about digital wellbeing. Meet the people behind the app."
+  />
 
-      {/* You can even add OG/Twitter tags here */}
-      <meta property="og:title" content="Herbie – Mindful Screen Time" />
-      <meta
-        property="og:description"
-        content="Cut down doomscrolling and reclaim your time with Herbie."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.herbiestreaks.xyz/" />
-      <meta
-        property="og:image"
-        content="https://www.herbiestreaks.xyz/og-image.png"
-      />
+  <meta property="og:title" content="The Herbie Team" />
+  <meta
+    property="og:description"
+    content="Meet the student founders behind Herbie, the digital wellbeing app."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.herbiestreaks.xyz/our-team" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Meet the Herbie Team" />
+  <meta
+    name="twitter:description"
+    content="The student team behind Herbie and its mission for digital wellbeing."
+  />
+  <meta name="twitter:image" content="/og-image.png" />
+
       <Navbar />
       <HeroSection />
       <TeamProfiles />

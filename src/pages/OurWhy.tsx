@@ -10,29 +10,29 @@ import Footer from "../components/common/Footer";
 const OurWhy: React.FC = () => {
   return (
     <>
-      {/* React 19 will hoist these into <head> */}
-      <title>Herbie – Mindful Screen Time for Students</title>
-      <meta
-        name="description"
-        content="Herbie helps students reduce doomscrolling with flexible app blocking, streaks, and mindful screen-time insights."
-      />
-      <meta
-        name="keywords"
-        content="digital wellbeing, screen time, app blocker, students, Herbie"
-      />
+  <title>Why We Built Herbie – Helping Students Break Doomscrolling Habits</title>
+  <meta
+    name="description"
+    content="Herbie was created to tackle poor sleep, anxiety, and digital fatigue caused by unhealthy screen-time habits. Learn the mission behind the movement."
+  />
 
-      {/* You can even add OG/Twitter tags here */}
-      <meta property="og:title" content="Herbie – Mindful Screen Time" />
-      <meta
-        property="og:description"
-        content="Cut down doomscrolling and reclaim your time with Herbie."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.herbiestreaks.xyz/" />
-      <meta
-        property="og:image"
-        content="https://www.herbiestreaks.xyz/og-image.png"
-      />
+  <meta property="og:title" content="Why We Built Herbie" />
+  <meta
+    property="og:description"
+    content="The story behind Herbie — improving digital wellbeing for students through mindful screen-time habits."
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.herbiestreaks.xyz/our-why" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why We Built Herbie" />
+  <meta
+    name="twitter:description"
+    content="The mission behind Herbie — helping students create healthier digital habits."
+  />
+  <meta name="twitter:image" content="/og-image.png" />
+
       <Navbar />
       <HeroSection />
       <HealthIssues />

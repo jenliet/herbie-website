@@ -34,6 +34,61 @@ const Home: React.FC = () => {
   />
   <meta name="twitter:image" content="/og-image.png" />
 
+  <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Herbie",
+    operatingSystem: "iOS, Android",
+    applicationCategory: "LifestyleApplication",
+    description:
+      "Herbie helps students reduce doomscrolling and build healthier screen-time habits through mindful app blocking, streaks, and usage analytics.",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "SGD",
+    },
+    url: "https://www.herbiestreaks.xyz/",
+    image: "https://www.herbiestreaks.xyz/og-image.png",
+    creator: {
+      "@type": "Organization",
+      name: "Herbie",
+      url: "https://www.herbiestreaks.xyz/",
+      description:
+        "Herbie is a student-led startup focused on improving digital wellbeing.",
+    },
+  })}
+</script>
+
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Herbie",
+    url: "https://www.herbiestreaks.xyz/",
+    logo: "https://www.herbiestreaks.xyz/og-image.png",
+    description:
+      "Herbie is a student-led startup improving digital wellbeing through mindful screen-time habits.",
+    sameAs: [
+      "https://www.instagram.com/herbieapp", // optional, can remove or update
+    ],
+  })}
+</script>
+
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Herbie",
+    url: "https://www.herbiestreaks.xyz/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.herbiestreaks.xyz/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  })}
+</script>
+
       <Navbar />
       <Hero />
       <Features />

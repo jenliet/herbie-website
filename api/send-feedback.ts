@@ -1,6 +1,7 @@
-const nodemailer = require("nodemailer");
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+import nodemailer from "nodemailer";
 
-module.exports = async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -30,7 +31,7 @@ module.exports = async function handler(req, res) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong></p>
-        <p>${String(message).replace(/\n/g, "<br>")}</p>
+        <p>${message.replace(/\n/g, "<br>")}</p>
       `,
     });
 
@@ -39,5 +40,4 @@ module.exports = async function handler(req, res) {
     console.error("email error", err);
     return res.status(500).json({ error: "Email failed" });
   }
-};
-
+}
